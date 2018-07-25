@@ -1,0 +1,57 @@
+
+entries:
+- title: Core GUI
+  levels: one
+  folders:
+
+  - title: General
+    output: web
+    folderitems:
+    - title: Getting Started
+      url: /coregui.html
+      output: web
+    - title: Comparison with IMGUI
+      url: /mydoc_introduction.html
+      output: web
+    - title: Platform Support
+      url: /mydoc_introduction.html
+      output: web
+    - title: CoreGUI for Editor
+      url: /mydoc_introduction.html
+      output: web
+    - title: Release Notes
+      url: /mydoc_introduction.html
+      output: web
+  - title: Scripting
+    output: web
+    folderitems:
+    - title: Basic Structure
+      url: /coregui/
+      output: web
+    - title: Widgets
+      url: /mydoc_introduction.html
+      output: web
+    - title: Fields
+      url: /mydoc_introduction.html
+      output: web
+    - title: Labels
+      url: /mydoc_introduction.html
+      output: web
+    - title: Scopes
+      url: /mydoc_introduction.html
+      output: web
+    - title: Dialogs
+      url: /mydoc_introduction.html
+      output: web
+  - title: Advanced Topics
+    output: web
+    folderitems:
+    - title: Screen Scaling
+      url: /coregui/
+      output: web
+    - title: Custom Event
+      url: /mydoc_introduction.html
+      output: web
+    - title: Custom Dialogs
+      url: /mydoc_introduction.html
+      output: web

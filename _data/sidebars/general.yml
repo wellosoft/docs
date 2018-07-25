@@ -1,0 +1,15 @@
+
+entries:
+- title: General
+  levels: one
+  folders:
+
+  - title: Introduction
+    output: web
+    folderitems:
+    - title: Intro
+      url: /
+      output: web
+    - title: Freebies
+      url: /freebies.html
+      output: web
