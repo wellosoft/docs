@@ -1,0 +1,15 @@
+<h1>{{ include.title }}</h1>
+<ul id='links'>
+  <li>
+    <ul>
+      {% for post in include.collections %}
+      {% if post.section %}
+    </ul>
+    <h2>{{ post.section }}</h2>
+    <ul>
+      {% endif %}
+      <li class='{{ post.type }}'><a href='#{{ post.url }}'>{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </li>
+</ul>

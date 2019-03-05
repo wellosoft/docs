@@ -1,94 +1,27 @@
-repository: tomjoht/documentation-theme-jekyll
-
-output: web
-# this property is useful for conditional filtering of content that is separate from the PDF.
-
-topnav_title: Wellosoft Products Documentation
-# this appears on the top navigation bar next to the home button
-
-site_title: Wellosoft Products Documentation
-# this appears in the html browser tab for the site title (seen mostly by search engines, not users)
-
-company_name: Wello Soft
-# this appears in the footer
-
-github_editme_path: willnode/docs/blob/master/
-# if you're using Github, provide the basepath to the branch you've created for reviews,
-# following the sample here. if not, leave this value blank.
-
-exclude:
-  - .idea/
-  - _pages/
-  - .gitignore
-  - Gemfile
-  - Gemfile.lock
-  - CNAME
-# these are the files and directories that jekyll will exclude from the build
-
-feedback_email: support@wellosoft.net
-
-highlighter: rouge
-# library used for syntax highlighting
-
-markdown: kramdown
-kramdown:
- input: GFM
- auto_ids: true
- hard_wrap: false
- syntax_highlighter: rouge
-
-# filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways
-
+---
+exclude: ['README.markdown']
+permalink: ':title'
+safe: false
+title: 'Carte'
+collections_dir: _articles
 collections:
-  tooltips:
-    output: false
-# collections are declared here. this renders the content in _tooltips and processes it,
-# but doesn't output it as actual files in the output unless you change output to true
+  texdraw_reference:
+    output: true
+    permalink: /:name
 
 defaults:
   -
     scope:
-      path: ""
-      type: "pages"
+      path: "texdraw"
     values:
-      layout: "page"
-      comments: true
-      search: true
-      sidebar: home_sidebar
-      topnav: topnav
+      context: "TEXDraw"
   -
     scope:
-      path: ""
-      type: "tooltips"
+      path: "sps"
     values:
-      layout: "page"
-      comments: true
-      search: true
-      tooltip: true
-
+      context: "Simple Procedural Skybox"
   -
     scope:
-      path: ""
-      type: "posts"
+      path: "engine4"
     values:
-      layout: "post"
-      comments: true
-      search: true
-      sidebar: home_sidebar
-      topnav: topnav
-
-# these are defaults used for the frontmatter for these file types
-
-sidebars:
-- general
-- texdraw
-- coregui
-- engine4
-- cp
-- sps
-
-description: "Wello Soft Products Documentation"
-# the description is used in the feed.xml file
-
-# needed for sitemap.xml file only
-url: https://docs.wellosoft.net
+      context: "Engine4"
