@@ -4,7 +4,7 @@ permalink: ':title'
 sass:
   style: compressed
 safe: false
-title: 'Carte'
+title: 'Wello Soft Docs'
 collections_dir: _articles
 collections:
   texdraw_reference:
