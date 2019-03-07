@@ -1,0 +1,120 @@
+/* References */
+#content {
+
+	padding: 20px;
+	padding-left: 260px;
+	max-width: 700px;
+
+	.control {
+		cursor: pointer;
+		font-size: 12px;
+		margin-left: 15px;
+	}
+
+	article {
+		clear: both;
+		margin: 15px 0;
+
+		&>a {
+			background: #333;
+			border-radius: 2px;
+			-moz-border-radius: 2px;
+			-webkit-border-radius: 2px;
+			cursor: pointer;
+			display: block;
+			padding: 15px;
+
+			&:hover {
+				background: #222;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+#content a h2 {
+	color: #fff;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0;
+
+	code {
+		float: right;
+		font-size: 14px;
+
+		b {
+			border-radius: 2px;
+			-moz-border-radius: 2px;
+			-webkit-border-radius: 2px;
+			color: #fff;
+			font-weight: normal;
+			padding: 3px 6px;
+		}
+	}
+}
+
+/* Default */
+#content article {
+	border-color: #e2e7ea;
+
+	@mixin highlight($fore, $back) {
+		color: $fore;
+
+		b {
+			background: $back;
+		}
+	}
+
+	a h2 code {
+		@include highlight(#657e8b, #657e8b);
+
+		b {
+			text-transform: uppercase;
+		}
+	}
+
+	/* GET */
+	&.GET a h2 code {
+		@include highlight(#119bdf, #119bdf);
+	}
+
+
+	/* POST */
+	&.POST a h2 code {
+		@include highlight(#52ce0e, #52ce0e);
+	}
+
+	/* PUT */
+	&.PUT a h2 code {
+		@include highlight(#e08f10, #e08f10);
+	}
+
+	/* DELETE */
+	&.DELETE a h2 code {
+		@include highlight(#e02a10, #e02a10)
+	}
+}
+
+/* Reference's body */
+
+#content .body {
+	border-top: 1px solid #eef1f2;
+	display: block;
+	padding: 15px 15px 0;
+
+	code {
+		border: 1px solid #e2e7ea;
+		background: #eef1f2;
+		border-radius: 2px;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		color: #546974;
+		padding: 0 1px;
+	}
+
+	p>code {
+		display: block;
+		padding: 15px;
+		white-space: pre;
+	}
+}

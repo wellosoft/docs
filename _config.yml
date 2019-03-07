@@ -1,6 +1,8 @@
 ---
 exclude: ['README.markdown']
 permalink: ':title'
+sass:
+  style: compressed
 safe: false
 title: 'Carte'
 collections_dir: _articles
