@@ -1,8 +1,7 @@
 ---
 layout: home
+title: TEXDraw
 ---
 
-# TEXDraw
-
-#### [Manual](manual.html)
-#### [References](references.html)
+## [Manual](manual.html)
+## [References](references.html)
